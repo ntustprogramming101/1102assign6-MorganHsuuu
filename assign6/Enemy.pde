@@ -2,7 +2,7 @@ class Enemy {
 	float x, y;
 	float w = SOIL_SIZE;
 	float h = SOIL_SIZE;
-
+  float speed = 2f;
 	void checkCollision(Player player){
 
 		if(isHit(x, y, w, h, player.x, player.y, player.w, player.h)){
